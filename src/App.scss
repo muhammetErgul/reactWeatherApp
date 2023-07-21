@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.App {
+  height: 100vh;
+  width: 100vw;
+  background-color: #15202b;
+
+  .container {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+      margin-bottom: 10px;
+      color: #f7f9f9;
+      letter-spacing: 2px;
+    }
+  }
+
+  .select-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .coords {
+      color: #fff;
+      font-size: 1.4rem;
+      cursor: pointer;
+    }
+    .cities {
+      border: none;
+      border: 1px solid #333;
+      padding: 5px 40px;
+      background: gray;
+      color: #fff;
+      border-radius: 8px;
+      outline: none;
+      font-weight: bold;
+    }
+  }
+
+  .days {
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 10px;
+    color: #f7f9f9;
+    text-align: center;
+    border: 3px solid #f7f9f9;
+    border-radius: 8px;
+    padding: 40px 20px;
+    font-weight: bold;
+
+    .day-deg {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      .wind {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
